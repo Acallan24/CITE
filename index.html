@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<nav>
+  <ul>
+  <li><a href="index.html">BookMLA</a></li>
+  <li><a href="indexebsite.html">WebsiteMLA</a></li>
+  <li><a href="bookreview.html">Week´s Top Read</a></li>
+   <li><a href="">APA (Comming Soon)</a></li>
+  <li><a href="https://www.rahulmk.com/" >About US</a></li>
+</ul>
+</nav>
+
+<br>
+<br>
+
+
+
+  <title>RKCITER</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: ;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+
+  <meta charset="UTF-8">
+
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+
+
+<body>
+
+<center><form>
+  <div class = "historya" id="history1" align="right">Your CItation WIll Apear Here Once Done</div>
+</form></center>
+
+
+  <div class="login-page">
+  <div class="form">
+
+
+    <form onsubmit = "return false;">
+      <p style="
+    font-family: monospace;
+    color: red;
+    "> Welcome <samp id="clientName"></samp></p>
+      <p>MLA Generator for a Book </p>
+      <br>
+      <br>
+      
+     
+      <input type="text" placeholder="LastName " id="lastname"/>
+      <input type="text" placeholder="MiddleInitial"id="middleinitial"/>
+      <input type="text" placeholder="FirstName" id ="firstName"/>
+      <input type="text" placeholder="BookName" id="bookname"/>
+      <input type="text" placeholder="City" id="city"/>
+      <input type="text" placeholder="Publisher"id="publisher"/>
+      <input type="text" placeholder="YearPublished"id="yearpublished"/>
+
+      
+      <br>
+      <br>
+      <button type = "button" onclick="lalu()" >Start Citing my book</button>
+      <br>
+      <br>
+      <button onClick="window.location.reload()"> Cite another Wesite</button>
+
+     
+
+
+     
+      
+      
+      
+      
+      
+      </div>
+
+      <p>
+          
+      
+
+        
+        </p>
+
+      </p>
+    </form>
+
+
+
+
+
+     
+
+  </div>
+</div>
+</body>
+
+
+<script></script>
+
+<script type="text/javascript">
+  function lalu() 
+{
+
+var lastnamelala = document.getElementById("lastname").value;
+var middleinitiallala = document.getElementById("middleinitial").value;
+var firstNamelala = document.getElementById("firstName").value;
+var booknamelala = document.getElementById("bookname").value;
+var citylala = document.getElementById("city").value;
+var publisherlala = document.getElementById("publisher").value;
+var yearpublishedlala = document.getElementById("yearpublished").value;
+var finalsen = "." + " " + "Print" + "." ;
+
+
+if (lastnamelala == "" || middleinitiallala == "" || firstNamelala == "" || booknamelala == "" || citylala == "" || publisherlala == "" || yearpublishedlala == ""  ) 
+
+    {
+  alert ("please fill all fields")
+    }
+
+else {
+
+    localStorage.setItem( "history2" ,   lastnamelala + "," + " " + middleinitiallala + "." +  firstNamelala + "." + " " +  booknamelala.italics() + "." + " " + citylala + ":" + " " + publisherlala + "," + " " + yearpublishedlala + finalsen) ; 
+    document.getElementById("history1").innerHTML = localStorage.getItem("history2");
+
+   
+      
+
+  }
+}
+
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130318920-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130318920-1');
+</script>
+
+<script  src="js/index.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+  <center style="color:white;"> Version: Triini </center>  
+<center style="color:white;"> Copyright &copy; 2020 <p></center>
+</html>
